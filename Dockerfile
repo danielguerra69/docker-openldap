@@ -2,8 +2,6 @@ FROM alpine
 
 MAINTAINER Daniel Guerra
 
-ENV OPENLDAP_VERSION 2.4.44-r0
-
 RUN  apk update \
   && apk add openldap \
   && rm -rf /var/cache/apk/*
